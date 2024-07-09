@@ -1,0 +1,123 @@
+/* Estilos base */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    margin: 2%;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 4vw;
+    margin: 2vh 0 4vh;
+    order: -1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan */
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vh;
+}
+
+.time h2 {
+    font-size: 3vw;
+    margin: 0 1vw 2vh 0;
+    padding: 2vw;
+    border-radius: 10%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.time small {
+    font-size: 2vw;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+/* Consulta de medios para ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .countdown {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .time h2 {
+        font-size: 8vw; /* Aumentar el tamaño de fuente para pantallas pequeñas */
+        padding: 4vw; /* Aumentar el padding para pantallas pequeñas */
+    }
+
+    .time small {
+        font-size: 6vw; /* Aumentar el tamaño de fuente para pantallas pequeñas */
+    }
+}
+
+/* Consulta de medios para ajustes en pantallas medianas */
+@media (min-width: 768px) and (max-width: 1440px) {
+    h1 {
+        font-size: 4vw; /* Ajustar el tamaño de fuente para pantallas medianas */
+    }
+
+    .time h2 {
+        font-size: 3vw; /* Ajustar el tamaño de fuente para pantallas medianas */
+    }
+
+    .time small {
+        font-size: 2vw; /* Ajustar el tamaño de fuente para pantallas medianas */
+    }
+}
+
+/* Consulta de medios para ajustes en pantallas grandes */
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 3vw; /* Ajustar el tamaño de fuente para pantallas grandes */
+    }
+
+    .time h2 {
+        font-size: 2vw; /* Ajustar el tamaño de fuente para pantallas grandes */
+    }
+
+    .time small {
+        font-size: 1.5vw; /* Ajustar el tamaño de fuente para pantallas grandes */
+    }
+}
