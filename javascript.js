@@ -1,4 +1,4 @@
-const fechaPresentacion = new Date('2024-07-07T08:00:00');//8 de agosto 2024
+const fechaPresentacion = new Date('2024-07-07T07:00:00');//8 de agosto 2024
 
 
 // Función para actualizar la cuenta regresiva y lanzar confeti cuando sea necesario
