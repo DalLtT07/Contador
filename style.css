@@ -41,10 +41,30 @@ h1 {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.enlaces {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 40px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.enlaces .logo img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.enlaces h2 {
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+}
+
 .countdown {
     display: flex;
     justify-content: center;
-    margin-top: 2vh;
+    margin: 20px 0;
     flex-wrap: wrap; /* Para que los elementos se envuelvan */
 }
 
@@ -72,6 +92,25 @@ h1 {
     font-weight: bold;
 }
 
+.enlaces .btn {
+    display: block;
+    width: 90%;
+    max-width: 400px; /* Aumentar el ancho máximo */
+    margin: 20px auto; /* Aumentar el margen superior e inferior */
+    padding: 40px; /* Aumentar el padding */
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-size: 1.8em; /* Aumentar el tamaño del texto */
+}
+
+.enlaces .btn:hover {
+    background-color: #555;
+}
+
 /* Consulta de medios para ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
     h1 {
@@ -90,6 +129,11 @@ h1 {
     .time small {
         font-size: 6vw; /* Aumentar el tamaño de fuente para pantallas pequeñas */
     }
+
+    .enlaces .btn {
+        font-size: 2em; /* Aumentar el tamaño de texto para pantallas pequeñas */
+        padding: 25px; /* Aumentar el padding para pantallas pequeñas */
+    }
 }
 
 /* Consulta de medios para ajustes en pantallas medianas */
@@ -104,6 +148,11 @@ h1 {
 
     .time small {
         font-size: 2vw; /* Ajustar el tamaño de fuente para pantallas medianas */
+    }
+
+    .enlaces .btn {
+        font-size: 1.8em; /* Ajustar el tamaño de texto para pantallas medianas */
+        padding: 22px; /* Ajustar el padding para pantallas medianas */
     }
 }
 
@@ -120,4 +169,27 @@ h1 {
     .time small {
         font-size: 1.5vw; /* Ajustar el tamaño de fuente para pantallas grandes */
     }
+
+    .enlaces .btn {
+        font-size: 1.5em; /* Ajustar el tamaño de texto para pantallas grandes */
+        padding: 30px; /* Ajustar el padding para pantallas grandes */
+    }
+}
+
+.nuevo-apartado {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Cambiado a un fondo más oscuro */
+    border-radius: 25px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.nuevo-apartado h2 {
+    font-size: 2.5vw;
+    margin-bottom: 10px;
+}
+
+.nuevo-apartado p {
+    font-size: 2vw;
 }
